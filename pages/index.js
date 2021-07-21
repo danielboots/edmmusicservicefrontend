@@ -46,7 +46,7 @@ const Home = ({ service, post }) => {
   useEffect(() => {
     sanityClient
       .fetch(
-        `*[_type == 'post']{
+        `*[_type == 'post'][0..2]{
         title,
         slug,
         body,
@@ -93,7 +93,7 @@ const Home = ({ service, post }) => {
                 </h1>
               </div>
 
-              <div className=" my-6 grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-10">
+              <div className=" my-6 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 ">
                 {postData &&
                   postData.map((post, index) => (
                     <div>
