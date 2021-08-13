@@ -31,20 +31,20 @@ export default function Team() {
   return (
     <div className="bg-gray-100">
       <div className="mx-auto py-12 px-6 max-w-7xl sm:px-6 lg:px-8 lg:py-24">
-        <div className="space-y-12 lg:grid lg:grid-cols-3 lg:gap-8 lg:space-y-0">
+        <div className="space-y-12 ">
           <div className="space-y-5 sm:space-y-4">
-            <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">
+            <h2 className="text-3xl font-extrabold tracking-tight text-center sm:text-4xl">
               About
             </h2>
 
-            <p className="text-lg text-gray-500 font-semibold">
+            <p className="p-3 text-lg text-gray-500 text-center">
               EDM Music Productions dedicated team of music professionals
               curated by us to ensure we maintain the highest quality of results
               and work. From music producers to A&R, we can handle your project
               from start to finish.
             </p>
           </div>
-          <div className="lg:col-span-2">
+          {/* <div className="lg:col-span-2">
             <ul className="space-y-12 sm:divide-y sm:divide-gray-200 sm:space-y-0 sm:-mt-8 lg:gap-x-8 lg:space-y-0">
               {people.map((person) => (
                 <li key={person.name} className="sm:py-8">
@@ -114,7 +114,7 @@ export default function Team() {
                 </li>
               ))}
             </ul>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
